@@ -1,3 +1,4 @@
+﻿import { supabaseServer } from '@/lib/supabaseServer';
 // app/api/bind-status/route.ts
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
@@ -25,3 +26,4 @@ export async function GET(req: Request) {
 
   return NextResponse.json({ bind: data ?? null });
 }
+

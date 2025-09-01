@@ -1,3 +1,4 @@
+﻿import { supabaseServer } from '@/lib/supabaseServer';
 // app/api/withdrawals/route.ts
 import { NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
@@ -46,3 +47,4 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'server_error' }, { status: 500 })
   }
 }
+
